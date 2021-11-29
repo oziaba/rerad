@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ReRad</title>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>ReRad</span>
+    </div>
+    <div id="about">
+      <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+      <a href="#" title="Преимущества" onclick="slowScroll('#overview')">Преимущества</a>
+      <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+      <a href="#" title="Ответы на вопросы" onclick="slowScroll('#faq')">FAQ</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>ReRadDicomViewer</h1>
+    <h3>сегодня!</h3>
+  </div>
+
+  <div id="main">
+    <div id="intro">
+      <h2>Наши услуги помогут вам</h2>
+      <span>Большой выбор всего, что может вам пригодиться</span>
+    </div>
+    <div id="text">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Преимущества</h2>
+    <h4>с нами все проще</h4>
+
+    <div class="img">
+      <img src="" alt="">
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function slowScroll(id){
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function (){
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
