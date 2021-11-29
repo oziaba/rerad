@@ -33,17 +33,17 @@
 }
 .shapka-two {
   padding: 7.15px 0 6.44px;
-  position: relative;
+  position: fixed;
 }
 .shapka {
   width: 1440px;
   height: 89.41px;
   background-color: var(--black);
-  position: relative;
+  position: fixed;
 }
 .logo {
   padding: 0 144px 0 0;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
 }
@@ -87,12 +87,12 @@
   margin-bottom: -52px;
 
 }
-.rectangle-4:hover{
+/* .rectangle-4:hover{
   filter: brightness(130%);
 }
 .rectangle-4:active{
   filter: brightness(50%);
-}
+} */
 .rectangle-5 {
   width: 52px;
   height: 52px;
@@ -100,10 +100,10 @@
   margin-bottom: -52px;
   margin-left: 86px;
 }
-.rectangle-5:hover{
+.knop:hover{
   filter: brightness(130%);
 }
-.rectangle-5:active{
+.knop:active{
   filter: brightness(50%);
 }
 .rectangle-6 {
@@ -113,12 +113,12 @@
   margin-bottom: -52px;
   margin-left: 172px;
 }
-.rectangle-6:hover{
+/* .rectangle-6:hover{
   filter: brightness(130%);
 }
 .rectangle-6:active{
   filter: brightness(50%);
-}
+} */
 .rectangle-7 {
   width: 52px;
   height: 52px;
@@ -126,24 +126,24 @@
   margin-bottom: -52px;
   margin-left: 258px;
 }
-.rectangle-7:hover{
+/* .rectangle-7:hover{
   filter: brightness(130%);
 }
 .rectangle-7:active{
   filter: brightness(50%);
-}
+} */
 .rectangle-8 {
   width: 52px;
   height: 52px;
   background-color: var(--silver);
   margin-left: 344px;
 }
-.rectangle-8:hover{
+/* .rectangle-8:hover{
   filter: brightness(130%);
 }
 .rectangle-8:active{
   filter: brightness(50%);
-}
+} */
 .bokovaja {
   background-color: var(--dark-slate-gray);
   padding: 0 0 727px;
